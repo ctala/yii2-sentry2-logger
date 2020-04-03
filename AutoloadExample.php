@@ -1,6 +1,6 @@
 <?php
 
-namespace \ctala\Sentry2;
+namespace ctala\Sentry2;
 
 /**
  * This is just an example.

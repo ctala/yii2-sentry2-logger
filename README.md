@@ -28,4 +28,4 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \\ctala\Sentry2\AutoloadExample::widget(); ?>```
+<?= \ctala\Sentry2\AutoloadExample::widget(); ?>```
