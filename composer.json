@@ -11,11 +11,12 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "~2.0.0"
+        "sentry/sentry": "^2.3",
+        "php-http/curl-client": "^2.1"
     },
     "autoload": {
         "psr-4": {
-            "ctala\\Sentry2\\": ""
+            "ctala\\Sentry2\\": "src/"
         }
     }
 }
