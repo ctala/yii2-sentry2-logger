@@ -28,4 +28,14 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \ctala\Sentry2\AutoloadExample::widget(); ?>```
+        'log' => [
+            'targets' => [
+                [
+                    'class' => 'ctala\Sentry2\SentryTarget',
+                    'levels' => ['error','warning'],
+                    'dsn' => "YOURDSN"
+
+                ],
+            ],
+        ],
+```

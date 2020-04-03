@@ -3,7 +3,6 @@
 
 namespace ctala\Sentry2;
 
-use yii\log\Logger;
 use yii\log\Target;
 use Sentry;
 
@@ -13,6 +12,13 @@ class SentryTarget extends Target
      * @var
      */
     public $dsn = null;
+
+    /**
+     * 
+     */
+    public $environment = "local";
+
+
     /**
      * {@inheritdoc}
      */
@@ -31,7 +37,8 @@ class SentryTarget extends Target
      */
     public function export()
     {
-        $messages = array_map([$this, 'formatMessage'], $this->messages);
-        Sentry\captureException($messages);
+        foreach ($this->messages as $message){
+            Sentry\captureMessage($message);
+        }
     }
 }

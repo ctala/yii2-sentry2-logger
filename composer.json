@@ -1,5 +1,6 @@
 {
     "name": "ctala/yii2-sentry2-logger",
+    "version": "1.0.0",
     "description": "Sentry2 Logger for Yii2",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"],
