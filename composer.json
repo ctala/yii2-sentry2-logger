@@ -1,0 +1,21 @@
+{
+    "name": "ctala/yii2-sentry2-logger",
+    "description": "Sentry2 Logger for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cristian Tala",
+            "email": "yomismo@cristiantala.cl"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "\\ctala\\Sentry2\\": ""
+        }
+    }
+}
